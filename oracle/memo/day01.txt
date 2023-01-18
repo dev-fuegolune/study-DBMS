@@ -1,0 +1,35 @@
+DB(Database)
+   데이터가 모여 있는 기지.
+   추상적 용어.
+
+DBMS(Database Management System)
+   DB를 관리할 수 있는 구체적인 체계(시스템).
+   Oracle, MariaDB, MySQL, MS-SQL, MongoDB, Mongoose, ...
+
+오라클 DBMS 버전
+   i: internet
+   g: grid
+   c: cloud
+
+오라클 DBMS 설치 - 11g
+https://drive.google.com/file/d/1rM1Z7-mA6vjySBgwWLr3ZI883xiL27HN/view?usp=sharing
+
+계정
+   sys   : 모든 권한
+   system   : 계정 관리
+   일반 계정 : 스키마 관리
+
+스키마
+   정리가 잘 되어 있는 표들의 묶음, 상태
+
+일반 계정 접속(hr)
+   cmd 접속 > sqlplus system/1234
+   SQL> show user
+   USER is "SYSTEM"
+   SQL> alter user hr account unlock;
+   SQL> alter user hr identified by hr;
+   SQL> conn hr/hr
+   SQL> show user
+   USER is "HR"
+
+IDE 설치 - DBeaver
